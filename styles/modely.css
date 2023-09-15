@@ -1,0 +1,60 @@
+.div-main-image-model-y{/*div main*/
+    background-image: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0) 35% ), url('../images/pg-model-y/Model-Y-Main-Hero-Desktop-Global.jfif');
+}
+.video-utility{/*div utility*/
+    width: 93.5%;
+    border-radius: 15px;
+    margin: auto;
+}
+#display-car{
+    height: 84vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.box-navigation{
+    width: 45.6%;
+    height: 30vh;
+    margin:auto;
+    padding: 5vh;
+}
+.navigation{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 2vh;
+}
+.option{
+    height: 14px;
+    width: 14px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #5C5E62;
+    cursor: pointer;
+}
+#box-text-navigation{
+    
+    color: black;
+}
+.all-wheel-drive-image{/*Section All-Wheel Drive*/
+    background-image: url("../images/pg-model-y/AWD_hero@2.jfif");
+}
+.interior-image{/*Section Interior*/
+    background-image: url("../images/pg-model-3/Model-3-Interior-Hero-Desktop-LHD.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   color: white;
+    height: 64vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vh;
+}
+.order-image-model-s{/*div order*/
+    background-image: url("../images/pg-model-y/Model-Y-Order-Hero-Desktop-Mobile-Global (1).jfif");
+}
+
+
+
+
+

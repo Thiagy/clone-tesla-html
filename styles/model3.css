@@ -1,0 +1,104 @@
+html{
+    overflow-y: hidden;
+}
+.div-main-image{/*Sessão model 3*/
+    background-image: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0) 24%, transparent 76% ), url('../images/pg-model-3/model-3-main.jfif');
+    color: white;
+}
+.manual-navigation{/*Manual navigation*/
+    position: fixed;
+    top: 29.9vh;
+    left: 2vh;
+    z-index: 6;
+    color: white;
+}
+.manual-navigation div{
+    font-size: 0.6rem;
+    transition: .1s;
+}
+.block-white{
+    height: 3.8vh;
+    width: 0.1vh;
+    background-color: white;
+}
+.text-block-white{
+    opacity: 0;
+    padding: 2.3px 0;
+}
+.text-block-white:hover{
+    opacity: 1;
+}
+
+.div-learn-more{/*div button learn more*/
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.div-learn-more p{
+    font-size: 14px;
+}
+.btn-learn-more{
+    border: 3px solid black;
+    background-color: transparent;
+    color: #171A20;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-learn-more:hover{
+    background-color: #171A20;
+    color: white;
+}
+
+.image-performance{/*Sessão Performance*/
+    position: relative;
+    background-image: url("../images/pg-model-3/Model-3-Performance-Hero-Desktop-LHD.jfif");
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-all-wheel-drive{/*Sessão All-Wheel-Drive*/
+    position: relative;
+    background-image: url("../images/pg-model-3/blue-car-model-3.jfif");
+    height: 60vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.range-image{/*div Range*/
+    background-image: url("../images/pg-model-3/range-model-3.jfif");
+    height: 100vh;
+}
+
+.order-image-model-3{
+    background-image: url("../images/pg-model-3/red-model-3.jfif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 60vh;
+    padding: 5vh;
+}
+
+@media (max-width:1200px){
+    .manual-navigation{
+        display: none;
+    }
+    html{
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+

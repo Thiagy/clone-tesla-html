@@ -1,0 +1,130 @@
+.div-main-image{/*Sessão Solar Roof*/
+    background-image: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0) 35% ), url('../images/pg-panel-roof/Solar-Roof-Hero-Desktop-Global.webp');
+    color: white;
+}
+.design-image{/*div design*/
+    position: relative;
+    background-image: url("../images/pg-panel-roof/Solar-Roof-Design-Desktop-Global.webp");
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.energy-storage-image{/*div storage-image*/
+    background-image: url("../images/pg-panel-roof/Solar-Roof-Energy-Desktop-Global.webp");
+    background-size: cover;
+    height: 100vh;
+}
+.durability-video{/*div durability*/
+    height: 100%;
+    width: 69.55%;
+}
+#box-video-design-installation-power-on{/*div design-installation-power-on*/
+    height: 100%;
+    width: 92.9%;
+    border-radius: 14px;
+}
+
+.box-navigation-manual{
+    width: 92.9%;
+    margin: 3vh auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-bar-video{
+    width: 33%;
+    cursor: pointer;
+}
+.navigation-first{
+    color: #171A20;
+}
+.navigations{
+    color: #A2A3A6;
+}
+.black-line-first{
+    width: 100%;
+    background-color: #171A20;
+    height: 2px;
+}
+.black-line{
+    width: 100%;
+    background-color: #393C41;
+    height: 2px;
+}
+.eficiency-image{/*div eficiency*/
+    background-image: url("../images/pg-panel-roof/Inverter_V8_D.avif");
+    height: 100vh;
+}
+.control-image{/*div control*/
+    background-image: url("../images/pg-panel-roof/SR-tesla-app-D.jfif");
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    width: 100%;
+}
+.value-image{/*div value*/
+    background-image: url("../images/pg-panel-roof/Solar-Roof-Value-Desktop-Global.webp");
+    height: 100vh;
+}
+.specs-image-painels-roof{/*div specs*/
+    background-image: url("../images/pg-panel-roof/PanelMeasure_desktop2x.png");
+}
+footer{/*Footer*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 100vh;
+    background-color: black;
+}
+.box-transform-your-roof{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    text-align: center;
+}
+.box-transform-your-roof h1{
+    margin-bottom: 2vh;
+}
+.btn-footer{
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+.btn-footer-1{
+    border: 3px solid white;
+    background-color: black;
+
+}
+.btn-footer-2{
+    border: 3px solid transparent;
+    background-color: #393C41;
+}
+.btn-footer-1:hover{
+    background-color: white;
+    color: #171A20;
+}
+.btn-footer-2:hover{
+    background-color: #A2A3A6;
+}
+
+@media (max-width: 1200px){
+    .box-video-design-installation-power-on{
+        width: 100%;
+    }
+    .image-flex-column{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
