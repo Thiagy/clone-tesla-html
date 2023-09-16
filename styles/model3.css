@@ -84,6 +84,7 @@ html{
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
+    min-width: 290px;
     height: 60vh;
     padding: 5vh;
 }
