@@ -692,6 +692,7 @@ hr{
     background-repeat: no-repeat;
     width: 40%;
     height: 50vh;
+    min-width: 300px;
 }
 
 footer{/*div footer*/
