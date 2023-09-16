@@ -147,5 +147,5 @@ function scroll(){
         btn_custom_order.innerHTML='Shop Now'
         btn_existing_inventory.style.display='none'
     }
-  }
-  setInterval(scroll, 2000)
+}
+setInterval(scroll, 2000)

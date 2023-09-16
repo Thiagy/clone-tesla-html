@@ -81,5 +81,10 @@ function slidePanelCar(){
 
 setTimeout(slidePanelCar, 1000)
 setInterval(slidePanelCar, 12000)
+option[0].addEventListener('click', slidePanelCar)
+option[1].addEventListener('click', slidePanelCar)
+option[2].addEventListener('click', slidePanelCar)
+option[3].addEventListener('click', slidePanelCar)
+option[4].addEventListener('click', slidePanelCar)
 
 

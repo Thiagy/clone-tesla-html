@@ -6,6 +6,29 @@ section{
     background-position: center;
     background-size: cover;
 }
+#section-model-3{
+    background-image: url("../images/homepage/model-3.jfif");
+}
+#section-2{
+    background-image: url("../images/homepage/model-y.jfif");
+}
+
+#section-model-s{
+    background-image: url("../images/homepage/model-s.jfif");
+}
+#section-model-x{
+    background-image: url("../images/homepage/model-x.jfif");
+}
+#section-solar-roof{
+    background-image: url("../images/homepage/solar-roof.webp");
+}
+#section-solar-panels{
+    background-image: url("../images/homepage/solar-panels.jfif");
+}
+#section-acessories{
+    background-image: url("../images/homepage/accessories.jfif");
+}
+
 #content-homepage{
     opacity: 0;
     position: fixed;
@@ -61,19 +84,7 @@ section{
     background-color: #e8e9e78c;
     
 }
-.down-arrow{
-    background-image: url("../images/homepage/seta-down.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 11px;
-    width: 100%;
-   text-align: center;
-    position: fixed;
-    top: 93.3vh;
-    transition: opacity .3s ease-in;
-    z-index: 0;
-}
+
 .list-footer{
     display: flex;
     flex-wrap: wrap;
@@ -110,9 +121,7 @@ section{
         align-items: center;
         width: 100%;
     }
-    aside{
-        width: 60%;
-    }
+    
     .list-footer{
         flex-direction: column;
         gap: 2px;
@@ -125,25 +134,25 @@ section{
 }
 @media (max-width: 425px){
 
-    .section-model-3{
-        background-image: url("../images/homepage/Homepage-Model-3-LHD-Mobile.jfif");
+    #section-model-3{
+        background-image: url("../images/homepage/model-3-litle.jfif");
     }
-    .section-model-y{
-        background-image: url("../images/homepage/Homepage-ModelY-LHD-Mobile.jfif");
+    #section-2{
+        background-image: url("../images/homepage/model-y-litle.jfif");
     }
-    .section-model-s{
-        background-image: url("../images/homepage/Homepage-Model-S-LHD-Mobile.jfif");
+    #section-model-s{
+        background-image: url("../images/homepage/model-s-litle.jfif");
     }
-    .section-model-x{
-        background-image: url("../images/homepage/Homepage-Model-X-LHD-Mobile.jfif");
+    #section-model-x{
+        background-image: url("../images/homepage/model-x-litle.jfif");
     }
-    .section-solar-roof{
-        background-image: url("../images/homepage/Homepage-SolarRoof-Mobile.webp");
+    #section-solar-roof{
+        background-image: url("../images/homepage/solar-roof-litle.webp");
     }
-    .section-solar-panels{
-        background-image: url("../images/homepage/Homepage-SolarPanels-Mobile.webp");
+    #section-solar-panels{
+        background-image: url("../images/homepage/solar-panels.jfif");
     }
-    .section-acessories{
+    #section-acessories{
         background-image: url("../images/homepage/Homepage-Accessories-Mobile.webp");
     }
 

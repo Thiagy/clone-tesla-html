@@ -313,9 +313,13 @@ aside a:hover{
     background-color: black;
     color: white;
 }
-#display-car{
+#div_panels_car{
     width: 93.5%;
     border-radius: 15px;
+}
+#div_panels_car video{
+    height: 100%;
+    width: 100%;
 }
 
 .box-navigation{
