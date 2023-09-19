@@ -4,9 +4,7 @@ html{
 .div-main-image{/*Sessão solar panels*/
     background-image: url('../images/pg-panel-solar/_25-Hero-D\ \(1\).jfif');
 }
-section{
-    height: 100vh;
-}
+
 .manual-navigation{/*Navigation*/
     position: fixed;
     top: 186px;

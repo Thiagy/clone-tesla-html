@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon/tesla.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/videos.css">
     <link rel="stylesheet" href="../styles/tesla.css">
     <link rel="stylesheet" href="../styles/solaroof.css">
     <title>Solar Roof | Tesla</title>
@@ -118,8 +120,8 @@
             <div class="range-image energy-storage-image"></div>
         </section>
         <section class="div-flex"><!--div Durability-->
-            <div class="range-image">
-                <video class="video-range" src="../video-pg-panel-roof/3.webm" autoplay loop></video>
+            <div class="div_video_flex">
+                <video class="video_flex" src="../video-pg-panel-roof/3.webm" autoplay loop></video>
             </div>
             <div class="tex-div-flex">
                 <div>
@@ -147,26 +149,27 @@
                     Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home's natural styling. Schedule a virtual consultation with an Energy Advisor to learn more.
                 </p>
             </div>
-            <video src="../video-pg-panel-roof/1.webm" autoplay loop id="box-video-design-installation-power-on"></video>
-            
-
+            <div class="div_video">
+                <video class="video" src="../video-pg-panel-roof/1.webm" autoplay loop id="box-video-design-installation-power-on"></video>
+            </div>
             <div class="box-navigation-manual box-slide">
-                <div class="navigation-first nav-bar-video car-attribute">
-                    <div class="black-line-first"></div>
+                <div class="navigations nav-bar-video car-attribute" data-video="../video-pg-panel-roof/1.webm">
+                    <div class="darkness-line-video"></div>
                     <h2>Design</h2>
                     <p>Aerial imagery and 3D modeling determine your custom design</p>
                 </div>
-                <div class="navigations nav-bar-video car-attribute">
-                    <div class="black-line"></div>
+                <div class="navigations nav-bar-video car-attribute" data-video="../video-pg-panel-roof/2.webm">
+                    <div class="darkness-line-video"></div>
                     <h2>Installation</h2>
                     <p>Our integrated design enables quick tile and Powerwall installation</p>
                 </div>
-                <div class="navigations nav-bar-video car-attribute">
-                    <div class="black-line"></div>
+                <div class="navigations nav-bar-video car-attribute" data-video="../video-pg-panel-roof/3.webm">
+                    <div class="darkness-line-video"></div>
                     <h2>Power On</h2>
                     <p>Final cleanup is completed before system activation</p>
                 </div>
             </div>
+            
         </section>
         <section class="div-flex image-flex-column"><!--div Efficiency-->
             <div class="tex-div-flex">
@@ -213,14 +216,14 @@
             </div>
             <div class="range-image value-image"></div>
         </section>
-        <section class="div-model-s-specs"><!--div specs-->
+        <section class="div-specs"><!--div specs-->
             <div class="div-flex">
-                <div class="div-image-model-s-specs specs-image-painels-roof"></div>
+                <div class="div-image-specs specs-image-painels-roof"></div>
                 <div class="tables">
                     <h1>Model S Specs</h1>
-                    <div class="div-description-model-s-specs">
-                        <div class="table-model-s">
-                            <button class="btn-model-s-plaid">Model s plaid</button>
+                    <div class="div-description-specs">
+                        <div class="table">
+                            <button class="btn-plaid">Model s plaid</button>
                             <p>Range (EPA est.)</p>
                             <p class="spacing">396 mi</p>
                             <hr>
@@ -239,8 +242,8 @@
                             <p>Weight</p>
                             <p class="spacing">4,766 lbs</p>
                         </div>
-                        <div class="table-model-s">
-                            <button class="btn-model-s">Model s</button>
+                        <div class="table">
+                            <button class="btn-specs">Model s</button>
                             <p>*Acceleration</p>
                             <p class="spacing">1.99 s 0-60 mph with rollout subtracted</p>
                             <hr>
@@ -259,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            <div class="div-btn-model-s-specs" style="padding: 5vh;">
+            <div class="div-btn-specs" style="padding: 5vh;">
                 <button class="btn-border-white">Compare</button>
             </div>
         </section>

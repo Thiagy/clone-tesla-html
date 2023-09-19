@@ -1,66 +1,71 @@
-function slideVideoDemo(){
-    let dual_motor_all_wheel_drive_demo = document.getElementsByClassName("box-slide-text-features")
-    let darkness_line_video = document.getElementsByClassName("darkness-line-video")
-    let demo_video = document.querySelector("#demo-video")
+// Captura todos os elementos com a classe box-slide-text-features
+const featureBoxes = document.querySelectorAll('.box-slide-text-features');
 
-    let date = new Date()
-    let now = date.getSeconds()
+// Captura o elemento de vídeo
+const video = document.getElementById('demo-video');
 
-    if(now<=15){
+// Captura a barra de escuridão
+const darknessLine = document.querySelector('.darkness-line-video');
 
-        demo_video.src='../video-pg-model-s/2.1.mp4'
+// Lista dos URLs dos vídeos
+const videoURLs = [
+    '../video-pg-model-s/2.1.mp4',
+    '../video-pg-model-s/2.2.mp4',
+    '../video-pg-model-s/2.3.mp4',
+    '../video-pg-model-s/2.4.mp4'
+];
 
-        dual_motor_all_wheel_drive_demo[3].style.color='#9C9D9F'
-        dual_motor_all_wheel_drive_demo[0].style.color='black'
+// Função para atualizar o vídeo e cores com base no índice
+function updateVideoAndColors(index) {
+    // Remove a classe "active" de todas as caixas de recurso
+    featureBoxes.forEach(box => {
+        box.classList.remove('active');
+    });
 
-        darkness_line_video[3].style.backgroundColor='#9C9D9F'
-        darkness_line_video[0].style.backgroundColor='black'
+    // Define o vídeo src com base no índice
+    video.src = videoURLs[index];
 
-        darkness_line_video[3].style.height='4px'
-        darkness_line_video[0].style.height='5px'
+    // Atualiza as cores da barra de escuridão, h3 e p
+    featureBoxes.forEach((box, i) => {
+        const darkness = box.querySelector('.darkness-line-video');
+        const h3 = box.querySelector('h3');
+        const p = box.querySelector('p');
 
-    }else if(now<=30){
-       
-        demo_video.src='../video-pg-model-s/2.2.mp4'
+        if (i === index) {
+            darkness.style.backgroundColor = 'black';
+            h3.style.color = 'black';
+            p.style.color = 'black';
+        } else {
+            darkness.style.backgroundColor = 'gray';
+            h3.style.color = 'gray';
+            p.style.color = 'gray';
+        }
+    });
 
-        dual_motor_all_wheel_drive_demo[0].style.color='#9C9D9F'
-        dual_motor_all_wheel_drive_demo[1].style.color='black'
+    // Reinicia o vídeo
+    video.load();
+    video.play();
 
-        darkness_line_video[0].style.backgroundColor='#9C9D9F'
-        darkness_line_video[1].style.backgroundColor='black'
-
-        darkness_line_video[0].style.height='4px'
-        darkness_line_video[1].style.height='5px'
-
-        
-    }else if(now<=45){
-
-        demo_video.src='../video-pg-model-s/2.3.mp4'
-
-        dual_motor_all_wheel_drive_demo[1].style.color='#9C9D9F'
-        dual_motor_all_wheel_drive_demo[2].style.color='black'
-
-        darkness_line_video[1].style.backgroundColor='#9C9D9F'
-        darkness_line_video[2].style.backgroundColor='black'
-
-        darkness_line_video[1].style.height='4px'
-        darkness_line_video[2].style.height='5px'
-
-    }else if(now<=60){
-
-        demo_video.src='../video-pg-model-s/2.4.mp4'
-
-        dual_motor_all_wheel_drive_demo[2].style.color='#9C9D9F'
-        dual_motor_all_wheel_drive_demo[3].style.color='black'
-
-        darkness_line_video[2].style.backgroundColor='#9C9D9F'
-        darkness_line_video[3].style.backgroundColor='black'
-
-        darkness_line_video[2].style.height='4px'
-        darkness_line_video[3].style.height='5px'
-
-    }  
+    // Adiciona a classe "active" à caixa de recurso atual
+    featureBoxes[index].classList.add('active');
 }
 
-setTimeout(slideVideoDemo, 1000)
-setInterval(slideVideoDemo, 14000)
+// Função para alternar automaticamente os vídeos a cada 5 segundos
+let currentIndex = 0;
+
+function autoChangeVideo() {
+    currentIndex = (currentIndex + 1) % videoURLs.length;
+    updateVideoAndColors(currentIndex);
+}
+
+setInterval(autoChangeVideo, 5000);
+
+// Adicione um ouvinte de eventos de clique a cada caixa de recurso
+featureBoxes.forEach((box, index) => {
+    box.addEventListener('click', () => {
+        updateVideoAndColors(index);
+    });
+});
+
+// Inicialmente, exiba o primeiro vídeo e cores
+updateVideoAndColors(currentIndex);

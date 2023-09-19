@@ -19,10 +19,18 @@
     height: 100%;
     width: 69.55%;
 }
-#box-video-design-installation-power-on{/*div design-installation-power-on*/
-    height: 100%;
+.div_video_des_inst_pow{
+    height: 80vh;
     width: 92.9%;
     border-radius: 14px;
+
+}
+#box-video-design-installation-power-on{/*div design-installation-power-on*/
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .box-navigation-manual{

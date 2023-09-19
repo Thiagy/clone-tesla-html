@@ -5,7 +5,6 @@
 .beyond-ludicrous-image-model-s{/*Div beyond ludicrous*/
     background-image: url("../images/pg-model-s/Model-S-Performance-Hero-Desktop-LHD.jfif");
 }
-
 .designed-for-efficiency-image-model-s{/*div designed-for-efficiency*/
     background-image: url("../images/pg-model-s/Model-S-Exterior-Hero-Desktop-Global.jpeg");
 }
@@ -18,11 +17,9 @@
 .car-attributes-image-6{
     background-image: url("../images/pg-model-s/model-s-dianteira-esquerda.jfif");
 }
-
 .order-image-model-s{
     background-image: url("../images/pg-model-s/white-model-s.jfif");
 }
-
 @media (max-width:768px){
     .beyond-ludicrous-image-model-s{
         background-image: url("../images/homepage/model-s-red-768px.jfif");

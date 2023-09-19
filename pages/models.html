@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon/tesla.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/videos.css">
     <link rel="stylesheet" href="../styles/tesla.css">
     <link rel="stylesheet" href="../styles/models.css">
     <title>Model S | Tesla</title>
@@ -93,8 +95,8 @@
         </div>
         <section class="car-interior"></section>
         <section class="div-video-car-interior"><!--div video car interior-->
-            <div id="div_panels_car">
-                <video id="display-car" src="../video-pg-model-s/1.mp4" loop autoplay></video>
+            <div class="div_video">
+                <video class="video" id="display-car" src="../video-pg-model-s/1.mp4" loop autoplay></video>
             </div>
             
             <div class="box-navigation">
@@ -113,8 +115,8 @@
                     </div>
                 </div>
                 <div class="box-text-navigation">
-                    <h4 id="title_slide_car">Cinematic Experience</h4>
-                    <p id="content_slide_car">A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.</p>
+                    <h4 id="title_slide_car"></h4>
+                    <p id="content_slide_car"></p>
                 </div>
             </div>
             <div class="car-attributes car-attributes-1">
@@ -177,7 +179,7 @@
             </div>
             <div id="interior-car-image"></div>
             <div class="box-slide">
-                <div class="slide-electric-powertrain">
+                <div class="slide-electric-powertrain inter-motor">
                     <div class="darkness-line"></div>
                     <h2>Model X</h2>
                     <p>Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum control.</p>
@@ -256,8 +258,9 @@
             </div>
         </section>
         <section class="div-flex"><!--div range-->
-            <div class="range-image">
-                <video class="video-range" src="../video-pg-model-s/Plaid-Range-Web-Desktop-8mb.mp4" autoplay loop></video>
+            <div class="div_video_flex">
+                
+                <video class="video_flex" src="../video-pg-model-s/range.mp4" autoplay loop></video>
                 <div class="car-attributes-box">
                     <div class="car-attribute">
                         <h2>405 mi</h2> 
@@ -374,39 +377,44 @@
                 <h1>Features</h1>
                 <p>Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:</p>
             </div>
-            <video src="../video-pg-model-s/2.1.mp4" autoplay loop id="demo-video"></video>
-            
+            <div class="div_video" style="width: 100%;">
+                <video class="video" autoplay loop id="demo-video">
+                    <source src="../video-pg-model-s/2.1.mp4" type="video/mp4">
+                    <source src="../video-pg-model-s/2.1.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="box-slide">
-                <div class="box-slide-text-features">
+                <div class="box-slide-text-features" data-video="../video-pg-model-s/2.1.mp4">
                     <div class="darkness-line-video"></div>
                     <h3>Navigate on Autopilot</h3>
                     <p>Active guidance from on-ramp to off-ramp</p>
                 </div>
-                <div class="box-slide-text-features">
+                <div class="box-slide-text-features" data-video="../video-pg-model-s/2.2.mp4">
                     <div class="darkness-line-video"></div>
                     <h3>Auto Lane Change</h3>
-                    <p>Automatically change lanes while driving on the highwa</p>
+                    <p>Automatically change lanes while driving on the highway</p>
                 </div>
-                <div class="box-slide-text-features">
+                <div class="box-slide-text-features" data-video="../video-pg-model-s/2.3.mp4">
                     <div class="darkness-line-video"></div>
                     <h3>Summon</h3>
                     <p>Automatically retrieve your car</p>
                 </div>
-                <div class="box-slide-text-features">
+                <div class="box-slide-text-features" data-video="../video-pg-model-s/2.4.mp4">
                     <div class="darkness-line-video"></div>
                     <h3>Autopark</h3>
                     <p>Parallel and perpendicular parking with a single touch</p>
                 </div>
             </div>
         </section>
-        <section class="div-model-s-specs"><!--div specs-->
+        <section class="div-specs"><!--div specs-->
             <div class="div-flex">
-                <div class="div-image-model-s-specs"></div>
+                <div class="div-image-specs"></div>
                 <div class="tables">
                     <h1>Model S Specs</h1>
-                    <div class="div-description-model-s-specs">
-                        <div class="table-model-s">
-                            <button class="btn-model-s-plaid">Model s plaid</button>
+                    <div class="div-description-specs">
+                        <div class="table">
+                            <button class="btn-plaid">Model s plaid</button>
                             <p>Range (EPA est.)</p>
                             <p class="spacing">396 mi</p>
                             <hr>
@@ -425,8 +433,8 @@
                             <p>Weight</p>
                             <p class="spacing">4,766 lbs</p>
                         </div>
-                        <div class="table-model-s">
-                            <button class="btn-model-s">Model s</button>
+                        <div class="table">
+                            <button class="btn-specs">Model s</button>
                             <p>*Acceleration</p>
                             <p class="spacing">1.99 s 0-60 mph with rollout subtracted</p>
                             <hr>
@@ -445,7 +453,7 @@
                     </div>
                 </div>
             </div>
-            <div class="div-btn-model-s-specs" style="padding: 5vh;">
+            <div class="div-btn-specs" style="padding: 5vh;">
                 <button class="btn-border-white">Compare</button>
             </div>
         </section>
